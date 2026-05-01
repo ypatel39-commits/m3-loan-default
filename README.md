@@ -4,6 +4,23 @@ Credit-default classifier with explainability. Trained on the **UCI Credit Card 
 
 > Honest framing: this is a portfolio project for a Business Law student's resume. Not a production credit decision system. No fairness / adverse-action controls beyond what the dataset documents.
 
+## Demo
+
+![Confusion matrix at 0.5 threshold (holdout 6,000 borrowers, AUC 0.773)](docs/confusion_matrix.png)
+
+```text
+$ python scripts/run_pipeline.py
+Holdout AUC: 0.7732   |   5-fold CV AUC: 0.7802
+Precision (default=1): 0.4720   Recall: 0.6044   F1: 0.5301
+Confusion matrix    pred=0   pred=1
+  actual=0          3776       897
+  actual=1           525       802
+```
+
+Full output: [`docs/cli-demo.txt`](docs/cli-demo.txt) | More plots: [`docs/shap_summary.png`](docs/shap_summary.png), [`docs/shap_waterfall.png`](docs/shap_waterfall.png)
+
+---
+
 ## Problem
 
 Predict whether a credit-card borrower will default on next month's payment, using demographic features, credit limit, and a 6-month history of repayment status, bill amounts, and payments.
