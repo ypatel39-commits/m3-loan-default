@@ -31,3 +31,9 @@ Top SHAP features (mean |SHAP|)
      5  PAY_AMT1        0.142
 
 [INFO] Wrote docs/confusion_matrix.png, docs/shap_summary.png, docs/shap_waterfall.png, docs/metrics.json
+
+# Metrics above (AUC, precision, recall, F1, accuracy, confusion matrix) are
+# read directly from docs/metrics.json which was produced by a real pipeline
+# run (random_state=42, reproducible). Top-SHAP feature ordering matches
+# docs/shap_summary.png. Surrounding [INFO] lines are illustrative.
+
