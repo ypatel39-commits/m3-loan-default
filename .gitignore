@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data cache (reproducible from data.py download step)
+data/*.xls
+data/*.csv
+data/*.parquet
+!data/.gitkeep
+
+# macOS
+.DS_Store
+
