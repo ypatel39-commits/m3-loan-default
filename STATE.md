@@ -30,4 +30,4 @@
 ## Repo
 
 - GitHub: https://github.com/ypatel39-commits/m3-loan-default
-- Last commit hash: see `git log -1 --format=%H` (updated by commit step)
+- Last commit hash: `62249c0` (docs: rewrite README with results table + add STATE.md)
